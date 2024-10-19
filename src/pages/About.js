@@ -1,23 +1,37 @@
 import React from 'react';
-import { Container, Row, Col, Image, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Image, Form, Button, Card } from 'react-bootstrap';
 import eu from '../assets/eu.jpeg';
+
+const projects = [
+  {
+    title: 'Projeto 1',
+    description: 'Descrição do projeto 1',
+    link: 'https://github.com/seu-usuario/projeto1'
+  },
+  {
+    title: 'Projeto 2',
+    description: 'Descrição do projeto 2',
+    link: 'https://github.com/seu-usuario/projeto2'
+  }
+];
 
 function About() {
   return (
-    <Container id="about">
-      <Row>
+    <Container id="about" className="mt-5">
+      <Row className="mb-4">
         <Col md={4}>
           <Image src={eu} roundedCircle className="w-75" />
         </Col>
         <Col md={8}>
           <h2>Sobre Mim</h2>
-          <p>Jovem que sempre foi apaixonado por praticar esportes desde muito novo. Sempre aprendendo que trabalho em equipe é algo essencial para se alcançar o topo, mesmo que as peças que se juntem para formar a equipe sejam fortes sozinhas também. De raciocício lógico rápido, de personalidade séria e sempre buscando a melhor forma de realizar as tarefas, encontrei na programação aquilo que quero fazer e estudar para ter meu sustento e deixar minha marca no mundo (desde que seja longe do front-end rsrs).</p>
+          <p style={{ textAlign: 'justify' }}>
+            Jovem que sempre foi apaixonado por praticar esportes desde muito novo. Sempre aprendendo que trabalho em equipe é algo essencial para se alcançar o topo, mesmo que as peças que se juntem para formar a equipe sejam fortes sozinhas também. De raciocício lógico rápido, de personalidade séria e sempre buscando a melhor forma de realizar as tarefas, encontrei na programação aquilo que quero fazer e estudar para ter meu sustento e deixar minha marca no mundo (desde que seja longe do front-end rsrs).
+          </p>
         </Col>
       </Row>
       <Row className="mt-5">
         <Col>
           <h2>Contato</h2>
-          <p>Para entrar em contato comigo, para saber mais sobre mim ou para outras coisas, preencha o formulário abaixo!</p>
           <Form>
             <Form.Group controlId="formName">
               <Form.Label>Nome</Form.Label>
@@ -35,6 +49,24 @@ function About() {
               Enviar
             </Button>
           </Form>
+        </Col>
+      </Row>
+      <Row className="mt-5">
+        <Col>
+          <h2>Projetos</h2>
+          <Row>
+            {projects.map((project, index) => (
+              <Col md={4} key={index} className="mb-4">
+                <Card className="h-100">
+                  <Card.Body>
+                    <Card.Title>{project.title}</Card.Title>
+                    <Card.Text>{project.description}</Card.Text>
+                    <Card.Link href={project.link} target="_blank" rel="noopener noreferrer">Ver no GitHub</Card.Link>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Col>
       </Row>
     </Container>
