@@ -33,9 +33,9 @@ function Home() {
         </Col>
       </Row>
 
-      <Row className="mt-5">
+      <Row className="mt-5" id="projects">
         <Col>
-        <h2>Projetos</h2>
+          <h2>Projetos</h2>
           <Row>
             {projects.map((project, index) => (
               <Col md={4} key={index} className="mb-4">
