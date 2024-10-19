@@ -15,7 +15,7 @@ const projects = [
   }
 ];
 
-function About() {
+function Home() {
   return (
     <Container id="about" className="mt-5">
       <Row className="mb-4">
@@ -78,4 +78,4 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
