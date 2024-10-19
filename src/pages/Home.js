@@ -35,7 +35,7 @@ function Home() {
 
       <Row className="mt-5">
         <Col>
-          <h2>Projetos</h2>
+        <h2>Projetos</h2>
           <Row>
             {projects.map((project, index) => (
               <Col md={4} key={index} className="mb-4">
