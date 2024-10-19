@@ -51,7 +51,7 @@ function Home() {
           </Row>
         </Col>
       </Row>
-      
+
       <Row className="mt-5">
         <Col>
           <h2>Contato</h2>
@@ -68,6 +68,7 @@ function Home() {
               <Form.Label>Mensagem</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Sua mensagem" />
             </Form.Group>
+            <br />
             <Button variant="primary" type="submit">
               Enviar
             </Button>
