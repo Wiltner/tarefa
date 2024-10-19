@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/tarefa/static/css/main.c8c01f99.css",
-    "main.js": "/tarefa/static/js/main.9c5e816d.js",
+    "main.js": "/tarefa/static/js/main.f8d0f28c.js",
     "static/media/eu.jpeg": "/tarefa/static/media/eu.421a2e566a2e66bf08e8.jpeg",
     "index.html": "/tarefa/index.html",
     "main.c8c01f99.css.map": "/tarefa/static/css/main.c8c01f99.css.map",
-    "main.9c5e816d.js.map": "/tarefa/static/js/main.9c5e816d.js.map"
+    "main.f8d0f28c.js.map": "/tarefa/static/js/main.f8d0f28c.js.map"
   },
   "entrypoints": [
     "static/css/main.c8c01f99.css",
-    "static/js/main.9c5e816d.js"
+    "static/js/main.f8d0f28c.js"
   ]
 }
