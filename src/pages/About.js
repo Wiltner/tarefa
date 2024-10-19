@@ -1,4 +1,3 @@
-// pages/About.js
 import React from 'react';
 import { Container, Row, Col, Image, Form, Button } from 'react-bootstrap';
 import eu from '../assets/eu.jpeg';
