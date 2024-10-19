@@ -32,6 +32,26 @@ function About() {
           </p>
         </Col>
       </Row>
+
+      <Row className="mt-5">
+        <Col>
+          <h2>Projetos</h2>
+          <Row>
+            {projects.map((project, index) => (
+              <Col md={4} key={index} className="mb-4">
+                <Card className="h-100">
+                  <Card.Body>
+                    <Card.Title>{project.title}</Card.Title>
+                    <Card.Text>{project.description}</Card.Text>
+                    <Card.Link href={project.link} target="_blank" rel="noopener noreferrer">Ver no GitHub</Card.Link>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Col>
+      </Row>
+      
       <Row className="mt-5">
         <Col>
           <h2>Contato</h2>
@@ -52,24 +72,6 @@ function About() {
               Enviar
             </Button>
           </Form>
-        </Col>
-      </Row>
-      <Row className="mt-5">
-        <Col>
-          <h2>Projetos</h2>
-          <Row>
-            {projects.map((project, index) => (
-              <Col md={4} key={index} className="mb-4">
-                <Card className="h-100">
-                  <Card.Body>
-                    <Card.Title>{project.title}</Card.Title>
-                    <Card.Text>{project.description}</Card.Text>
-                    <Card.Link href={project.link} target="_blank" rel="noopener noreferrer">Ver no GitHub</Card.Link>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
         </Col>
       </Row>
     </Container>
