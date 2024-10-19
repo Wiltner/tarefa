@@ -26,7 +26,7 @@ function Home() {
           <h2>Sobre Mim</h2>
           <p style={{ textAlign: 'justify' }}>
             Jovem que sempre foi apaixonado por praticar esportes desde muito novo. Sempre aprendendo que trabalho em equipe é algo essencial para se alcançar o topo, mesmo que as peças que se juntem para formar a equipe sejam fortes sozinhas também. De raciocício lógico rápido, de personalidade séria e sempre buscando a melhor forma de realizar as tarefas, encontrei na programação aquilo que quero fazer e estudar para ter meu sustento e deixar minha marca no mundo (desde que seja longe do front-end rsrs).
-          </p><br /><br />
+          </p><br />
           <p style={{ textAlign: 'justify' }}>
             Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Faculdade Senac Jaraguá do Sul, onde estou aprendendo a programar em Java, Python, JavaScript, HTML, CSS, SQL, entre outras linguagens e tecnologias. Estou sempre buscando aprender mais e mais, seja por cursos online, documentações ou até mesmo em projetos pessoais.
           </p>
@@ -68,7 +68,6 @@ function Home() {
               <Form.Label>Mensagem</Form.Label>
               <Form.Control as="textarea" rows={3} placeholder="Sua mensagem" />
             </Form.Group>
-            <br />
             <Button variant="primary" type="submit">
               Enviar
             </Button>
