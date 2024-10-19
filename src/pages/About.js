@@ -4,14 +4,14 @@ import eu from '../assets/eu.jpeg';
 
 const projects = [
   {
-    title: 'Projeto 1',
-    description: 'Descrição do projeto 1',
-    link: 'https://github.com/seu-usuario/projeto1'
+    title: 'Calculadora',
+    description: 'Calculadora feita em JavaScript, HTML e CSS',
+    link: 'https://github.com/Wiltner/Calculadora'
   },
   {
-    title: 'Projeto 2',
-    description: 'Descrição do projeto 2',
-    link: 'https://github.com/seu-usuario/projeto2'
+    title: 'Bot Telegram',
+    description: 'Bot que retira fundo de fotos feito em Python',
+    link: 'https://github.com/Wiltner/embed24a4'
   }
 ];
 
@@ -26,6 +26,9 @@ function About() {
           <h2>Sobre Mim</h2>
           <p style={{ textAlign: 'justify' }}>
             Jovem que sempre foi apaixonado por praticar esportes desde muito novo. Sempre aprendendo que trabalho em equipe é algo essencial para se alcançar o topo, mesmo que as peças que se juntem para formar a equipe sejam fortes sozinhas também. De raciocício lógico rápido, de personalidade séria e sempre buscando a melhor forma de realizar as tarefas, encontrei na programação aquilo que quero fazer e estudar para ter meu sustento e deixar minha marca no mundo (desde que seja longe do front-end rsrs).
+          </p><br /><br />
+          <p style={{ textAlign: 'justify' }}>
+            Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na Faculdade Senac Jaraguá do Sul, onde estou aprendendo a programar em Java, Python, JavaScript, HTML, CSS, SQL, entre outras linguagens e tecnologias. Estou sempre buscando aprender mais e mais, seja por cursos online, documentações ou até mesmo em projetos pessoais.
           </p>
         </Col>
       </Row>
